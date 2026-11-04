@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>RobloxMultiClient.App</RootNamespace>
+    <AssemblyName>RobloxMultiClient</AssemblyName>
+    <ApplicationIcon>..\..\assets\branding\camo-icon.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RobloxMultiClient.Core\RobloxMultiClient.Core.csproj" />
+    <ProjectReference Include="..\RobloxMultiClient.Windows\RobloxMultiClient.Windows.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\assets\branding\camo-logo.png" Link="Assets.camo-logo.png" />
+    <EmbeddedResource Include="..\..\assets\branding\camo-icon.ico" Link="Assets.camo-icon.ico" />
+  </ItemGroup>
+</Project>

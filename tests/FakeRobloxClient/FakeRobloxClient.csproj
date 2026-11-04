@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- Named like the real client so tests exercise the real process name end to end. -->
+    <AssemblyName>RobloxPlayerBeta</AssemblyName>
+    <RootNamespace>FakeRobloxClient</RootNamespace>
+    <!-- Tests copy this build output and rename it; it is never a real Roblox client. -->
+    <OutputPath>$(MSBuildThisFileDirectory)..\..\artifacts\fake\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+</Project>
